@@ -2,12 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './components/root/app.component';
-import { FuritListComponent } from './components/furit.list/furit.list.component';
+import { AppHeader } from './components/common/app.header/header.component';
+import { AppContent } from './components/common/app.content/content.component';
+import { AppFooter } from './components/common/app.footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FuritListComponent
+    AppHeader,
+    AppContent,
+    AppFooter
   ],
   imports: [
     BrowserModule
