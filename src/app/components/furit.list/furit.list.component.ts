@@ -7,7 +7,7 @@ import { Furit } from '../../interfaces/Furit';
     styleUrls: ['./furit.list.component.css'],
     providers: [FuritService]
 })
-export class FuritListComponent {
+export class FuritListComponent implements OnInit {
     furits: Furit[];
     constructor(private furitService: FuritService) {
     }
