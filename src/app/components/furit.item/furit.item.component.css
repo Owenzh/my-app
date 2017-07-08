@@ -1,0 +1,11 @@
+.furits-item{
+    width: 350px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid rosybrown;
+}
+.furits-item .furit_pic{
+    width: 105px;
+    height: 105px;
+    opacity: .8
+}

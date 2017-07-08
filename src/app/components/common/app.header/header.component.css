@@ -36,6 +36,9 @@ div.search,.search p{
 div.search{
     float: right;
 }
+div.search input,div.search button{
+    line-height: 26px;
+}
 div.search::after{
     clear: both;
 }

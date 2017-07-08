@@ -1,9 +1,8 @@
+<div class="loading" *ngIf="!furits">
+    <img src="/assets/imgs/loading.gif" />
+</div>
 <ul>
     <ol *ngFor="let item of furits">
-        <div class="furits-item">
-            <span class="furit_pic"><img src="{{item.picture}}" alt="" class="pic" width="100" height="100"></span>
-            <span class="furit_name">{{item.name}}</span>
-            <span class="furit_price">{{item.price}}</span>
-        </div>
+        <furit-item [furit]="item"></furit-item>
     </ol>
 </ul>

@@ -1,4 +1,4 @@
-export class Furit {
+export interface Furit {
     name: string;
     price: string;
     picture: string;
