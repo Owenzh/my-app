@@ -21,4 +21,7 @@ export class FuritListComponent implements OnInit, AfterViewInit {
     ngAfterViewInit() {
         console.log(this.furitItemList);
     }
+    getCurrentFuritName(furitName){
+        console.log(furitName);
+    }
 }

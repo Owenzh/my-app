@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Furit } from '../../interfaces/Furit'
 @Component({
     selector: 'furit-item',
@@ -8,7 +8,12 @@ import { Furit } from '../../interfaces/Furit'
 })
 export class FuritItemComponent {
     @Input() furit: Furit;
+    @Output() current: EventEmitter<any> = new EventEmitter();
     constructor() {
 
+    }
+    getFruitDetail($event, currentFuritItem: Furit) {
+        console.log(currentFuritItem);
+        this.current.emit(currentFuritItem.name);
     }
 }

@@ -3,6 +3,6 @@
 </div>
 <ul>
     <ol *ngFor="let item of furits">
-        <furit-item [furit]="item"></furit-item>
+        <furit-item [furit]="item" (current)="getCurrentFuritName($event);"></furit-item>
     </ol>
 </ul>

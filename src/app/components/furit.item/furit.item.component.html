@@ -1,4 +1,4 @@
-<div class="furits-item" *ngIf="furit">
+<div class="furits-item" *ngIf="furit" (click)="getFruitDetail($event,furit);">
     <span class="furit_pic"><img src="{{furit.picture}}" alt="" class="pic" width="100" height="100"></span>
     <span class="furit_name">{{furit.name}}</span>
     <span class="furit_price">{{furit.price}}</span>
