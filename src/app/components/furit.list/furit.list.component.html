@@ -1,8 +1,10 @@
 <div class="loading" *ngIf="!furits">
     <img src="/assets/imgs/loading.gif" />
 </div>
-<ul>
-    <ol *ngFor="let item of furits">
-        <furit-item [furit]="item" (current)="getCurrentFuritName($event);"></furit-item>
-    </ol>
-</ul>
+<div class="furit-list">
+    <ul>
+        <ol *ngFor="let item of furits">
+            <furit-item [furit]="item" (current)="getCurrentFuritName($event);"></furit-item>
+        </ol>
+    </ul>
+</div>

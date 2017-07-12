@@ -1,3 +1,8 @@
 .loading{
     text-align: center;
 }
+div.furit-list{
+    background: #f2f8f9;
+    margin: 0 auto;
+    width: 70%;
+}
